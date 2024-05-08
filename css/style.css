@@ -1,0 +1,318 @@
+/* MS - Mobile Screen */
+/* TS - Tablet Screen */
+/* DS - Desktop Screen */
+
+/* Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+/* Background Colors */
+.bg-orange {
+  background-color: #F16718;
+}
+
+.bg-orange-light {
+  background-color: #FF9B62;
+}
+
+.bg-black {
+  background-color: #162542;
+}
+
+.bg-grey {
+  background-color: #E8EFF2;
+}
+
+/* Text Color */
+.txt-black {
+  color: #162542;
+}
+
+.txt-grey {
+  color: #7B8BAD;
+}
+
+.txt-white {
+  color: #fff;
+}
+
+/* Pre-order Btn */
+.order_btn {
+  padding: 11px 15px;
+  border-radius: 8px;
+} 
+
+.order_link {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Barlow';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+/* Section Header MS */
+.section_header {
+  margin: 25px 25px 65px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Section Typemaster MS */
+.section_typemaster {
+  margin-bottom: 70px;
+  padding-left: 9px;
+  width: 311px;
+}
+
+.typemaster_header {
+  font-family: 'Barlow';
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.typemaster_par {
+  font-family: 'Barlow';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+
+.typemaster_btn {
+  display: flex;
+  align-items: center;
+}
+
+.orange_btn {
+  margin-right: 30px;
+}
+
+.typemaster_btn-par {
+  font-family: 'Barlow';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+/* Section Photos MS */
+.section_photos {
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.first_img {
+  width: 94%;
+  margin-left: 20px;
+  border-radius: 15px 0 0 15px;
+  margin-bottom: 20px;
+}
+
+.first_img-tablet {
+  display: none;
+}
+
+.photos_content {
+  display: flex;
+  flex-direction: row;
+}
+
+.second_img {
+  display: block;
+  width: 35%;
+  height: 200px;
+  margin-right: 20px;
+  border-radius: 0 15px 15px 0;
+}
+
+.third_img {
+  display: block;
+  width: 57%;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.div_mechanical {
+  display: none;
+}
+
+/* Section Mechanical MS */
+.section_mechanical {
+  margin-bottom: 70px;
+  text-align: center;
+  padding: 12px;
+}
+
+.mechanical_header {
+  font-family: 'Barlow';
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.mechanical_par {
+  font-family: 'Barlow';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+/* Section Content MS */
+.section_content {
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 100px;
+}
+
+.content_logo {
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 50px;
+}
+
+.content_header {
+  font-family: 'Barlow';
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.content_par {
+  font-family: 'Barlow';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 65px;
+}
+
+/* Section Footer MS */
+.footer_par {
+  font-family: 'Barlow';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Tablet Screen */
+@media screen and (min-width: 481px) {
+  /* Section Typemaster TS */
+  .typemaster_tablet {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .section_typemaster {
+    width: 60%;
+  }
+
+  .first_img {
+    display: none;
+  }
+
+  .first_img-tablet {
+    display: inline-block;
+    width: 50%;
+    height: 85%;
+    border-radius: 15px 0 0 15px;
+    position: absolute;
+    right: -14%;
+  }
+
+  /* Section Photos TS */
+  .photos_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .second_img {
+    display: block;
+    width: 36%;
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 15px;
+  }
+
+  .third_img {
+    display: block;
+    width: 53%;
+    height: 300px;
+    border-radius: 15px;
+  }
+
+  .div_mechanical {
+    display: none;
+  }
+
+  /* Section Mechanical TS */
+  .section_mechanical {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .mechanical_par {
+    width: 95%;
+  }
+
+  /* Section Content TS */
+  .section_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .tablet_width {
+    width: 50%;
+  }
+}
+
+/* Desktop Screen */
+@media screen and (min-width: 769px) {
+  /* Section Photos DS */
+  .section_photos {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .div_mechanical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 40%;
+  }
+
+
+  /* Section Mechanical DS */
+  .section_mechanical {
+    display: none;
+  }
+
+  /* Section Content DS */
+  .section_content {
+    flex-wrap: nowrap;
+    text-align: inherit;
+    margin-bottom: 0;
+  }
+
+  .tablet_width {
+    padding: 20px;
+    width: 21%;
+  }
+
+}
